@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Amor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/romantic" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="entranceScreen" class="entrance-screen">
+      <h1>Te amo xuxuzinho</h1>
+      <button onclick="startExperience()" class="start-button">Vamos lá 💖</button>
+    </div>
+
+    <div class="music-bar">
+      <img src="https://nandoreis.com.br/wp-content/uploads/2024/06/Nando-Reis-e-os-Infernais-Dres.png" alt="Capa" class="cover" />
+      <button id="playPauseBtn">▶</button>
+      <div class="info">
+        <div class="title">Pra Você Guardei O Amor</div>
+        <div class="artist">Ana Cañas e Nando Reis</div>
+      </div>
+      <audio id="audio" autoplay="autoplay" src="song.mp3"></audio>
+    </div>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="xuxu1.jpg" alt="Imagem 1" /></div>
+        <div class="carousel-item"><img src="xuxu2.jpg" alt="Imagem 2" /></div>
+        <div class="carousel-item"><img src="xuxu3.jpg" alt="Imagem 3" /></div>
+        <div class="carousel-item"><img src="xuxu4.jpg" alt="Imagem 4" /></div>
+        <div class="carousel-item"><img src="xuxu5.jpg" alt="Imagem 5" /></div>
+        <div class="carousel-item"><img src="xuxu6.jpg" alt="Imagem 6" /></div>
+        <div class="carousel-item"><img src="xuxu7.jpeg" alt="Imagem 7" /></div>
+        <div class="carousel-item"><img src="xuxu8.jpeg" alt="Imagem 8" /></div>
+        <div class="carousel-item"><img src="xuxu9.jpeg" alt="Imagem 9" /></div>
+        <div class="carousel-item"><img src="xuxu10.jpeg" alt="Imagem 10" /></div>
+        <div class="carousel-item"><img src="xuxu11.jpeg" alt="Imagem 11" /></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <div class="content">
+      <div class="counter" id="counter">
+        <p class="couple-names">Italo & Ester</p>
+        <p>Compartilhando a vida com você há:</p>
+        <p id="time">Calculando...</p>
+      </div>
+
+      <div class="quote-section">
+        <div class="quote"><p>"Citação 1 aqui."</p></div>
+        <div class="quote"><p>"Citação 2 aqui."</p></div>
+      </div>
+
+      <div class="footer">
+        <p>Desenvolvido com amor por seu Xuxu❤</p>
+      </div>
+    </div>
+
+    <div class="hearts-container" id="hearts-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

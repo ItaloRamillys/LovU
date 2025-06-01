@@ -1,0 +1,291 @@
+/* Importação de fonte romântica */
+@import url("https://fonts.cdnfonts.com/css/romantic");
+
+/* Estilização geral da página */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Carousel */
+.carousel {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+}
+
+.carousel-inner {
+  max-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  margin-right: auto !important;
+}
+
+.carousel-item img {
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Conteúdo principal */
+.content {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+/* Contador de tempo juntos */
+.counter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Seção de frases */
+.quote-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Nomes do casal */
+.couple-names {
+  color: rgb(187, 0, 0);
+  font-size: 2em;
+  font-family: "Romantic", sans-serif;
+  font-style: italic;
+}
+
+/* Player de música */
+.music-bar {
+    width: 300px;
+    background: red;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.music-player {
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  gap: 15px;
+  max-width: 90%;
+  width: 400px;
+}
+
+.cover {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#playPauseBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#playPauseBtn:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artist {
+  font-size: 0.85rem;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Tela de entrada */
+#entranceScreen {
+  transition: opacity 2s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-family: 'Romantic', sans-serif;
+}
+
+#entranceScreen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#entranceScreen button{
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Romantic', sans-serif;
+}
+
+/* Corações animados */
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  transform: rotate(45deg);
+  animation: fall 6s linear infinite;
+  opacity: 0.8;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10%) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+  .carousel-inner,
+  .carousel-item img {
+    max-height: 60vh;
+  }
+
+  .counter {
+    font-size: 1rem;
+  }
+
+  .quote {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .carousel-inner,
+  .carousel-item img {
+    max-height: 50vh;
+  }
+
+  .counter {
+    font-size: 0.9rem;
+  }
+
+  .quote {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .music-player {
+    width: 95%;
+    padding: 12px 15px;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+
+  .artist {
+    font-size: 0.8rem;
+  }
+
+  #playPauseBtn {
+    font-size: 20px;
+  }
+}
