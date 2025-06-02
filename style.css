@@ -90,7 +90,7 @@ body {
 /* Player de música */
 .music-bar {
     width: 300px;
-    background: red;
+    background: rgb(187, 0, 0);
     border-radius: 4px;
     padding: 4px;
     margin-top: 10px;
@@ -146,7 +146,7 @@ body {
 
 .artist {
   font-size: 0.85rem;
-  color: #aaa;
+  color: #ddd;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
