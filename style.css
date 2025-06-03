@@ -253,7 +253,7 @@ body {
       height: 0;
       position: relative;
       background: linear-gradient(135deg, #212529, #343a40);
-      width: 351px;
+      width: 550px;
       padding: 0;
       border: 4px dashed #b02a37;
       border-radius: 20px;
@@ -291,7 +291,7 @@ body {
     }
 
     .ticket .amount {
-      font-size: 2.8rem;
+      font-size: 1.5rem;
       color: #fff;
       font-weight: bold;
     }
@@ -328,6 +328,18 @@ body {
   .quote {
     font-size: 0.9rem;
   }
+
+.ticket {
+  width: 350px;
+}
+
+    .ticket .amount {
+      font-size: 1rem;
+    }
+
+    .ticket small {
+      font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 575px) {

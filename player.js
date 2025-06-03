@@ -1,5 +1,7 @@
 
 const audio = document.getElementById("audio");
+audio.volume = 1;
+
 const playPauseBtn = document.getElementById("playPauseBtn");
 
 let isPlaying = false;
